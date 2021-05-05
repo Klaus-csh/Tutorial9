@@ -33,6 +33,19 @@ header-includes:
 
 \clearpage
 
+```{r global, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      cache=TRUE, 
+                      messages=FALSE, 
+                      warning=FALSE, 
+                      fig.align = 'center')
+
+library(tidyverse)
+library(readr)
+
+crime <-read_csv(here::here('data/Data_Tables_Criminal_Incidents_Visualisation_Year_Ending_December_2019.csv'))
+```
+
 # Section 1
 
 
