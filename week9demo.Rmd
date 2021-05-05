@@ -53,6 +53,10 @@ crime <-read_csv(here::here('data/Data_Tables_Criminal_Incidents_Visualisation_Y
 
 # Section 2
 
+```{r}
+drug <- crime %>%
+  filter(`Offence Subdivision` %in% 'C30 Drug use and possession')
+```
 
 \clearpage
 
